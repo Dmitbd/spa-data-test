@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import OrdersContainer from '../../components/OrdersContainer/OrdersContainer'
 import Pagination from '../../components/Pagination/Pagination'
 
-const OrdersPage = ({orders, loading}) => {
+const OrdersPage = ({ orders, loading }) => {
 
   const [currentPage, setCurrentPage] = useState(1)
   const [ordersPerPage, setOrdersPerPage] = useState(10)

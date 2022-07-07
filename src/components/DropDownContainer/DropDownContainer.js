@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import dropdown from './DropDownContainer.module.css'
 
-const DropDownContainer = ({setOrdersPerPage}) => {
+const DropDownContainer = ({setOrdersPerPage, setCurrentPage}) => {
 
   const items = ["10", "25", "50"]
   const [isOpen, setIsOpen] = useState(false)
@@ -13,6 +13,7 @@ const DropDownContainer = ({setOrdersPerPage}) => {
     setSelectedItem(value)
     setOrdersPerPage(value)
     setIsOpen(false)
+    setCurrentPage(1)
   }
 
   return (

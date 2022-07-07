@@ -40,7 +40,7 @@ const Pagination = ({ orders, ordersPerPage, currentPage, setCurrentPage, firstO
       </div>
       <div className={pagination.filterContainer}>
         <p className={pagination.text}>по</p>
-        <DropDownContainer setOrdersPerPage={setOrdersPerPage} />
+        <DropDownContainer setOrdersPerPage={setOrdersPerPage} setCurrentPage={setCurrentPage}/>
         <p className={pagination.text}>записей</p>
       </div>
     </div>
