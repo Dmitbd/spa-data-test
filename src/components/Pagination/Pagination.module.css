@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  color: #8c8888;
+  margin-bottom: 50px;
+}
+
+.text {
+  margin: auto 10px;
+}
+
+.records {
+  width: 200px;
+  text-align: end;
+}
+
+.buttonsContainer {
+  display: flex;
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.button {
+  background-color: transparent;
+  width: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.white {
+  color: #8c8888;
+}
+
+.blue {
+  color: #396bde
+}
+
+.blue:hover {
+  cursor: pointer;
+  background-color: #bebebe;
+}
+
+.oneArrow {
+  border-left: 1px solid #bebebe;
+  border-right: 1px solid #bebebe;
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.dubleArrow {
+  border: 0;
+}
+
+.pageNumber {
+  width: 75px;
+  margin: auto;
+  text-align: center;
+}
+
+.filterContainer {
+  display: flex;
+  width: 200px;
+}

@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  color: #8c8888;
+  border-bottom: 1px solid #bebebe;
+}
+
+.orders {
+  margin: 0 auto 30px;
+}
+
+.numberDate {
+  min-width: 140px;
+  width: 20%;
+  margin-left: 20px;
+}
+
+.orderTypeAutor {
+  width: 30%;
+  min-width: 295px;
+}
+
+.accountTerminal {
+  width: 30%;
+  min-width: 140px;
+}
+
+.status {
+  width: 20%;
+  min-width: 100px;
+  margin: auto 20px;
+  text-align: center;
+}
+
+.orders {
+  padding: 0;
+}
+
+.orderLink {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,62 @@
+.dropdown {
+	height: 40px;
+	border: 1px solid #bebebe;
+	border-radius: 5px;
+}
+
+.dropdown:hover {
+	cursor: pointer;
+	border: 1px solid #396bde;
+}
+
+.header {
+	display: flex;
+	margin-top: 10px;
+	color: #396bde;
+}
+
+
+.valueText {
+	margin: auto 0 auto 10px;
+	text-align: center;
+}
+
+.opened {
+	width: 0;
+	height: 0;
+	margin: auto 10px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #bebebe;
+}
+
+.closed {
+	width: 0;
+	height: 0;
+	margin: auto 10px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #bebebe;
+}
+
+.listContainer {
+	border: 1px solid #396bde;
+	margin-top: 15px;
+	border-radius: 5px;
+	width: 40px;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.item {
+	margin-left: 10px;
+}
+
+.item:hover {
+	cursor: pointer;
+	color: #396bde;
+}

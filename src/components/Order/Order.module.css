@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bebebe;
+  cursor: pointer;
+}
+
+.container:hover {
+  border: 1px solid red;
+  background-color: #f5f5f580;
+}
+
+.titleText {
+  margin: 0;
+}
+
+.subtitleText {
+  margin: 5px 0 0;
+  color: #8c8888;
+}
+
+.numberDate {
+  min-width: 140px;
+  width: 20%;
+  margin-left: 20px;
+}
+
+.orderTypeAuthor {
+  width: 30%;
+  min-width: 295px;
+}
+
+.accountTerminal {
+  width: 30%;
+  min-width: 140px;
+}
+
+.accountTerminal p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status {
+  width: 20%;
+  min-width: 100px;
+  margin: auto 20px;
+  text-align: center;
+}
+
+.statusText {
+  margin: 0;
+  color: #f7f7f7;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.colorRed {
+  background-color: #b94a48;
+}
+
+.colorGreen {
+  background-color: #4caf50;
+}
+
+.colorBlue {
+  background-color: #3276b1;
+}
+
+.colorYellow {
+  background-color: #c79121;
+}
+
+.colorBlack {
+  background-color: #252525;
+}
