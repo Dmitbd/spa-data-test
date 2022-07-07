@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DropDownContainer from '../DropDownContainer/DropDownContainer'
 import pagination from './Pagination.module.css'
 import cn from 'classnames'
 
-const Pagination = ({ orders, ordersPerPage, currentPage, setCurrentPage, firstOrderIndex, lastOrderIndex, setOrdersPerPage }) => {
+const Pagination = ({ orders, ordersPerPage, currentPage, setCurrentPage,
+  firstOrderIndex, lastOrderIndex, setOrdersPerPage }) => {
 
   const isNextPage = currentPage !== orders.length / ordersPerPage
   const isPrevPage = currentPage !== 1
@@ -30,7 +31,7 @@ const Pagination = ({ orders, ordersPerPage, currentPage, setCurrentPage, firstO
 
   return (
     <div className={pagination.container}>
-      <p className={cn(pagination.text, pagination.records)}>записи {firstOrderIndex || 1}-{lastOrderIndex}</p>
+      <p className={cn(pagination.text, pagination.records)}>записи {firstOrderIndex + 1}-{lastOrderIndex}</p>
       <div className={pagination.buttonsContainer}>
         <button className={cn(pagination.dubleArrow, pagination.button, isPrevPage ? pagination.blue : pagination.white)} onClick={() => firstPage()}>&#171;</button>
         <button className={cn(pagination.oneArrow, pagination.button, isPrevPage ? pagination.blue : pagination.white)} onClick={() => prevPage()}>&#8249;</button>
@@ -40,7 +41,7 @@ const Pagination = ({ orders, ordersPerPage, currentPage, setCurrentPage, firstO
       </div>
       <div className={pagination.filterContainer}>
         <p className={pagination.text}>по</p>
-        <DropDownContainer setOrdersPerPage={setOrdersPerPage} setCurrentPage={setCurrentPage}/>
+        <DropDownContainer setOrdersPerPage={setOrdersPerPage} setCurrentPage={setCurrentPage} />
         <p className={pagination.text}>записей</p>
       </div>
     </div>
