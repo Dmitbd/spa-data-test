@@ -1,19 +1,19 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import dropdown from './DropDownContainer.module.css'
 
 const DropDownContainer = ({setOrdersPerPage}) => {
 
-  const items = ["10", "25", "50"];
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const items = ["10", "25", "50"]
+  const [isOpen, setIsOpen] = useState(false)
+  const [selectedItem, setSelectedItem] = useState(null)
 
-  const toggling = () => setIsOpen(!isOpen);
+  const toggling = () => setIsOpen(!isOpen)
 
   const onOptionClicked = value => () => {
-    setSelectedItem(value);
+    setSelectedItem(value)
     setOrdersPerPage(value)
-    setIsOpen(false);
-  };
+    setIsOpen(false)
+  }
 
   return (
     <div className={dropdown.dropdown}>
@@ -38,4 +38,4 @@ const DropDownContainer = ({setOrdersPerPage}) => {
   )
 }
 
-export default DropDownContainer;
+export default DropDownContainer
