@@ -5,7 +5,7 @@ import Pagination from '../../components/Pagination/Pagination'
 const OrdersPage = ({ orders, loading }) => {
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [ordersPerPage, setOrdersPerPage] = useState(10)
+  const [ordersPerPage, setOrdersPerPage] = useState(5)
 
   const lastOrderIndex = currentPage * ordersPerPage
   const firstOrderIndex = lastOrderIndex - ordersPerPage

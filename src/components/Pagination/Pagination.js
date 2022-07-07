@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import DropDownContainer from '../DropDownContainer/DropDownContainer'
 import pagination from './Pagination.module.css'
 import cn from 'classnames'
@@ -41,7 +41,7 @@ const Pagination = ({ orders, ordersPerPage, currentPage, setCurrentPage,
       </div>
       <div className={pagination.filterContainer}>
         <p className={pagination.text}>по</p>
-        <DropDownContainer setOrdersPerPage={setOrdersPerPage} setCurrentPage={setCurrentPage} />
+        <DropDownContainer setOrdersPerPage={setOrdersPerPage} setCurrentPage={setCurrentPage} lastOrderIndex={lastOrderIndex}/>
         <p className={pagination.text}>записей</p>
       </div>
     </div>

@@ -3,9 +3,9 @@ import dropdown from './DropDownContainer.module.css'
 
 const DropDownContainer = ({ setOrdersPerPage, setCurrentPage }) => {
 
-  const items = ["5", "10", "25", "50"]
+  const items = [5, 10, 25, 50]
   const [isOpen, setIsOpen] = useState(false)
-  const [selectedItem, setSelectedItem] = useState(null)
+  const [selectedItem, setSelectedItem] = useState(5)
 
   const toggling = () => setIsOpen(!isOpen)
 
@@ -20,7 +20,7 @@ const DropDownContainer = ({ setOrdersPerPage, setCurrentPage }) => {
     <>
       <div className={dropdown.dropdown}>
         <div className={dropdown.header} onClick={toggling}>
-          <p className={dropdown.valueText}> {selectedItem || "10"} </p>
+          <p className={dropdown.valueText}> {selectedItem} </p>
           {isOpen
             ? <div className={dropdown.closed}></div>
             : <div className={dropdown.opened}></div>}
